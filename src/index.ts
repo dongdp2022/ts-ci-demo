@@ -7,3 +7,12 @@ export function sub(a: number, b: number): number {
 }
 
 console.log('Hello TS CI Demo, sum(2,3) =', sum(2, 3));
+
+// src/math-copy.ts
+export function add(a: number, b: number): number {
+  return a + b; // duplicate với sum
+}
+
+export function minus(a: number, b: number): number {
+  return a - b; // duplicate với sub
+}
