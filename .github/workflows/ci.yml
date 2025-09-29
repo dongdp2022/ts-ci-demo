@@ -30,7 +30,7 @@ jobs:
 
       # 5. Check duplicate code using jscpd
       - name: Check Duplicate Code
-        run: npx jscpd ./src --reporters console
+        run: npx jscpd ./src --reporters console 5
 
       # 6. Run tests with coverage
       - name: Run Tests
