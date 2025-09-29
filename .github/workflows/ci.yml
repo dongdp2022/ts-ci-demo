@@ -10,19 +10,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1. Checkout source code
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      # 2. Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
+      # 3. Install dependencies
       - name: Install Dependencies
         run: npm ci
 
+      # 4. Run Lint
       - name: Run Lint
         run: npm run lint
 
+      # 5. Check duplicate code using jscpd
+      - name: Check Duplicate Code
+        run: npx jscpd ./src --reporters console
+
+      # 6. Run tests with coverage
       - name: Run Tests
         run: npm run test -- --coverage
+
+      # 7. Upload coverage report as artifact (optional)
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/
