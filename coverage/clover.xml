@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1759111104776" clover="3.2.0">
-  <project timestamp="1759111104776" name="All files">
+<coverage generated="1759117888274" clover="3.2.0">
+  <project timestamp="1759117888274" name="All files">
     <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1" elements="8" coveredelements="6" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
-    <file name="index.ts" path="C:\Users\dongd\Downloads\ts-ci-demo\ts-ci-demo\src\index.ts">
+    <file name="index.ts" path="F:\DongDP\code demo\ts-ci-demo\ts-ci-demo\src\index.ts">
       <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="3" type="stmt"/>
