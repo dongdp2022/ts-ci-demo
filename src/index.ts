@@ -17,6 +17,6 @@ export function minus(a: number, b: number): number {
   return a - b; // duplicate với sub
 }
 
-export function test_a() {
-  return 100;
-}
+// export function test_a() {
+//   return 100;
+// }
