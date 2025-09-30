@@ -8,6 +8,21 @@ module.exports = {
   ],
   rules: {
     '@typescript-eslint/no-unused-vars': ['error'],
-    'prettier/prettier': 'warn'
+    'prettier/prettier': 'warn',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        "selector": "variableLike", // biến, hằng, hàm
+        "format": ["camelCase"]
+      },
+      {
+        "selector": "typeLike", // class, interface, type alias
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "enumMember",
+        "format": ["UPPER_CASE"]
+      }
+    ]
   },
 };
